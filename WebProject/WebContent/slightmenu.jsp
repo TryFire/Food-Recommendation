@@ -1,0 +1,357 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>景点</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!--// css -->
+    <!-- gallery -->
+    <link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
+    <!-- //gallery -->
+    <!-- font-awesome icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+    <!-- //font -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
+    </script>
+    <style>
+        #choice-title{
+            margin: 0 auto;0
+            width: auto;
+            color: #0f88eb;
+            height: 75px;
+            font-size: 50px;
+            background-size: contain;
+            font-family: "幼圆";
+        }
+        .search{
+             margin-top: 10px;
+            margin-right: 50px;
+        }
+    </style>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+
+</head>
+<body>
+<div class="banner1 jarallax">
+
+
+    <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+
+        <nav>
+            <ul class="nav navbar-nav">
+              <li><div class="search">
+                    <input required type="text" name="search" aria-label="请输入你想搜索的内容" placeholder="请输入你想搜索的内容" autocomplete="off">
+                    <button onclick = "window.location.href = 'resultsearch.jsp'">搜索</button>
+              </div>
+
+                </li>
+                <li><a href="#" class="scroll">账户：123456</a></li>
+                <li><a href="#" class="scroll">关注</a></li>
+                <li><a href="#" class="scroll">联系我们</a></li>
+
+            </ul>
+        </nav>
+
+
+        <!-- /.navbar-collapse -->
+    </nav>
+
+
+
+</div>
+<div class="gallery" id="menu">
+<div class="container">
+<div class="w3l-heading">
+    <h3 id="choice-title">风一样的自由旅途</h3>
+</div>
+<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+<ul id="myTab" class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home-main" id="home-tab" role="tab" data-toggle="tab" aria-controls="home-main" aria-expanded="true">总览</a></li>
+    <li role="presentation"><a href="#learning" role="tab" id="learning-tab" data-toggle="tab" aria-controls="learning">历史名迹</a></li>
+    <li role="presentation"><a href="#playing" role="tab" id="playing-tab" data-toggle="tab" aria-controls="playing">风景名胜</a></li>
+    <li role="presentation"><a href="#painting" role="tab" id="painting-tab" data-toggle="tab" aria-controls="painting">人文情怀</a></li>
+    <li role="presentation"><a href="#school" role="tab" id="school-tab" data-toggle="tab" aria-controls="school">娱乐胜地</a></li>
+</ul>
+<div id="myTabContent" class="tab-content">
+<div role="tabpanel" class="tab-pane fade in active" id="home-main" aria-labelledby="home-tab">
+    <div class="w3_tab_img">
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g1.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/p1.jpg" alt=" " class="img-responsive" />
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>兵马俑</h5>
+                <p>世界第八大奇迹</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g2.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/p2.jpg" alt=" " class="img-responsive" />
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>大雁塔</h5>
+                <p>玄奘法师凑请在慈恩寺内建的塔</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g3.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/p3.jpg" alt=" " class="img-responsive" />
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>西安城墙</h5>
+                <p>位于西安市中心区  </p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g4.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/p4.jpg" alt=" " class="img-responsive" />
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>大唐芙蓉园</h5>
+                <p>中国第一个全方位展示盛唐风貌的大型皇家园林式文化主题公园</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g5.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/p5.jpg" alt=" " class="img-responsive" />
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>华清池</h5>
+                <p>唐明皇与杨贵妃的爱情故事</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g6.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/p6.jpg" alt=" " class="img-responsive" />
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>钟楼</h5>
+                <p></p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g7.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/p7.jpg" alt=" " class="img-responsive" />
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>西安碑林博物馆 </h5>
+                <p>碑林是收藏我国古代碑石时间最早、数目最大的一座艺术宝库</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g1.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/p8.jpg" alt=" " class="img-responsive" />
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>乐华城</h5>
+                <p>现代娱乐，亚洲最大的过山车主题乐园 </p>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="learning" aria-labelledby="learning-tab">
+    <div class="w3_tab_img">
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g2.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Vivamus</h5>
+                <p>Eleifend</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g3.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Cras</h5>
+                <p>Pulvinar</p>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="playing" aria-labelledby="playing-tab">
+    <div class="w3_tab_img">
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g4.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g4.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Maecenas</h5>
+                <p>Blandit</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g5.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g5.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Sodales</h5>
+                <p>Vivamus</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g6.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g6.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Vivamus</h5>
+                <p>Eleifend</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g7.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g7.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Maecenas</h5>
+                <p>Blandit</p>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="painting" aria-labelledby="painting-tab">
+    <div class="w3_tab_img">
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g1.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g1.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Morbi</h5>
+                <p>Ornare </p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g2.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g2.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Cras</h5>
+                <p>Pulvinar</p>
+            </div>
+        </div>
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g3.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g3.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Donec</h5>
+                <p>Vulputate</p>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+<div role="tabpanel" class="tab-pane fade" id="school" aria-labelledby="school-tab">
+    <div class="w3_tab_img">
+        <div class="col-sm-3 w3_tab_img_left">
+            <div class="demo">
+                <a class="cm-overlay" href="images/g4.jpg">
+                    <figure class="imghvr-shutter-in-out-diag-2"><img src="images/g4.jpg" alt=" " class="img-responsive">
+                    </figure>
+                </a>
+            </div>
+            <div class="agile-gallery-info">
+                <h5>Lorem</h5>
+                <p>Consectetur</p>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+</div>
+</div>
+</div>
+<script src="js/jquery.tools.min.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/jquery.cm-overlay.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.cm-overlay').cmOverlay();
+    });
+</script>
+</div>
+</div>
+
+</body>
+
+</html>
